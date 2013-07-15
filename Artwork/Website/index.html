@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<!--
+  ______          __  ___     ______      __                
+ /_  __/__  _  __/ /_( _ )   / ____/___  / /___  __  _______
+  / / / _ \| |/_/ __/ __ \/|/ /   / __ \/ / __ \/ / / / ___/
+ / / /  __/>  </ /_/ /_/  </ /___/ /_/ / / /_/ / /_/ / /    
+/_/  \___/_/|_|\__/\____/\/\____/\____/_/\____/\__,_/_/     
+
+-->
+
+<html>
+    <head>
+        <meta http-equiv = 'Content-Type' content = 'text/html; charset=UTF-8'>
+        <title>Text&Colour</title>
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+        <!--///////////   JS   ///////////-->
+        <!-- jQuery 1.9.0 -->
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <!-- fancyBox 2.1.4 -->
+        <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+        <!-- Nivo Slider 3.2 -->
+        <script src="imageSlider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+        <!--///////////   CSS   ///////////-->
+        <!-- Text&Colour -->
+        <link href = 'screen.css' type = 'text/css' rel = 'stylesheet' media = 'screen'/>
+        <!-- fancyBox 2.1.4 -->
+        <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+        <!-- Nivo Slider 3.2 -->
+        <link rel="stylesheet" href="imageSlider/nivo-slider.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="imageSlider/themes/default/default.css" type="text/css" media="screen" />
+
+        <!--///////////   GOOGLE ANALYTICS   ///////////-->
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-38022733-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
+
+    </head>
+    <body>
+<!--
+////////////////////////////////////////////////////////////////////////////
+                                   HEADER                                
+////////////////////////////////////////////////////////////////////////////
+-->
+        <div id = "indexHeader" class = "header">
+            <div class = "out">
+
+                <ul class = "headerNav">
+                    <li><a href="#footer">Support</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                    <!-- <li><a href="about.html">About</a></li> -->
+                </ul>
+
+                <div class = "in">
+                    <a class = "logo" id = "indexLogo" href = "index.html"></a>
+
+                    <div id = "iphone">
+                        <div id = "screenshot">
+                            <!--
+                                //////////////////////////////////////
+                                       NIVO SLIDER + FANCYBOX                                
+                                //////////////////////////////////////
+                            -->
+                            <div class="slider-wrapper theme-default">
+                                <div id="slider" class="nivoSlider">
+                                    <!-- Image size is adjusted in imageSlider/nivo-slider.css -->
+                                    <a href="images/screenshot_01.png" class="fancybox" rel="group"><img src="images/screenshot_01.png"></a>
+                                    <a href="images/screenshot_02.png" class="fancybox" rel="group"><img src="images/screenshot_02.png"></a>
+                                    <a href="images/screenshot_03.png" class="fancybox" rel="group"><img src="images/screenshot_03.png"></a>
+                                    <a href="images/screenshot_04.png" class="fancybox" rel="group"><img src="images/screenshot_04.png"></a>
+                                    <a href="images/screenshot_05.png" class="fancybox" rel="group"><img src="images/screenshot_05.png"></a>
+                                    <a href="images/screenshot_06.png" class="fancybox" rel="group"><img src="images/screenshot_06.png"></a>
+                                    <a href="images/screenshot_07.png" class="fancybox" rel="group"><img src="images/screenshot_07.png"></a>
+                                </div>
+                            </div>
+                      
+                            <script type="text/javascript">
+                                $(document).ready(function() {
+                                    /* fancyBox */
+                                    $(".fancybox").fancybox({
+                                        prevEffect: 'none',
+                                        nextEffect: 'none'
+                                    });
+
+                                    $(".youtube").fancybox({
+                                        width       : 800,
+                                        height      : 450,
+                                        maxWidth    : 800,
+                                        maxHeight   : 450,
+                                        fitToView   : false,
+                                        autoSize    : false,
+                                        closeClick  : false,
+                                        openEffect  : 'none',
+                                        closeEffect : 'none'
+                                    });
+
+                                    /* Nivo Slider*/
+                                    $('#slider').nivoSlider({
+                                        effect: 'fade',
+                                        animSpeed: 200,
+                                        manualAdvance: true
+                                    });
+                                });
+                            </script>
+                            <!--
+                                //////////////////////////////////////
+                            -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--
+////////////////////////////////////////////////////////////////////////////
+                                   VIDEO                                
+////////////////////////////////////////////////////////////////////////////
+-->
+        <div id = "video">
+            <div class = "out">
+                <div class = "in">
+                    <div id = "trailer-wrapper">
+
+
+                        <div id = "trailer">
+                            <a class="youtube fancybox.iframe" href = "https://www.youtube-nocookie.com/embed/iHa8PP51sts?vq=hd1080&autoplay=1&rel=0&showinfo=0&showsearch=0&theme=light"></a>
+                        </div>
+
+                    </div>
+                    <a id = "appStore" href = "http://itunes.apple.com/app/id590257831" target="_blank"></a>
+
+                    <div id = "triangle"></div>
+                </div>
+            </div>
+        </div>
+<!--
+////////////////////////////////////////////////////////////////////////////
+                               DESCRIPTION                                
+////////////////////////////////////////////////////////////////////////////
+-->
+        <div id = "description">
+            <div class = "out">
+                <div class = "in">
+                    <img id = "icon" src="images/icon.png">
+
+                    <div id = "descriptionText">
+                        <h3>Text&Colour is a beautiful and simple Outliner.</h3>
+
+                        <p>You can organize everything in flexible, hierarchical ordered lists.</p>
+
+                        <p>Create your own structure for notes, tasks, ideas, grocery lists or even flashcards for vocabulary training. The possible use cases are endless.</p>
+
+                        <p>Use different colors to customize the appearance of the App or to give your items some further information like red for "very important" or blue for "less important".</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--
+////////////////////////////////////////////////////////////////////////////
+                                OUTLINER                                
+////////////////////////////////////////////////////////////////////////////
+-->
+        <div id = "outliner">
+            <div class = "out">
+                <div class = "in">
+
+                    <h1>What the Hell is an Outliner?</h1>
+
+                    <div class = "grid">
+                        <div class = "col1">
+                            <h3>Origin</h3>
+                            <p>Outliners are an old, but still very sophisticated software concept from the 1970s. They had their highest popularity in the 1980s with Outliners like <a href="http://outliners.scripting.com/more11c.html" target="_blank">More</a> and <a href="http://www.a-sharp.com/acta/" target="_blank">Acta</a>.</p>
+                        </div>
+
+                        <div class = "col2">
+                            <h3>Functionality</h3>
+                            <p>The key idea of Outliners is to structure information into hierarchical ordered lists which can be infinitely nested. These lists consist of items. Every item can be the parent of further child items.</p>
+                        </div>
+
+                        <div class = "col3">
+                            <h3>Benefit</h3>
+                            <p>This functionality is useful to collect, manage and organize every type of information like ideas for an essay, daily tasks or big projects. Outliners are more powerful and flexible than usual ToDo Apps.</p>
+                        </div>
+                    </div>
+
+                    <img id = "infographic" src="images/outliner.png">
+
+                </div>
+            </div>
+        </div>
+<!--
+////////////////////////////////////////////////////////////////////////////
+                                    APP                                
+////////////////////////////////////////////////////////////////////////////
+-->
+        <div id = "app">
+            <div class = "out">
+                <div class = "in">
+                    <h1>Tell me more about Text&Colour!</h1>
+
+                    <div id = "addSec" class = "sec">
+                        <div class = "col1">
+                            <img class = "appImage" src="images/add.gif">
+                        </div>
+
+                        <div class = "col2">
+                            <h3>Add new Items</h3>
+                            <p>Add new items and add some child items to them. The amount of child items will be displayed as a little number.</p>
+                        </div>
+                    </div>
+
+                    <div id = "coloursSec" class = "sec">
+                        <div class = "col1">
+                            <h3>Colours</h3>
+                            <p>Choose 1 of 6 gorgeous colours to give your items a special meaning. For instance, choose yellow to mark something as super important or green to mark a task in your ToDo list as done.</p>
+                        </div>
+
+                        <div class = "col2">
+                            <img class = "appImage" src="images/colours.png">
+                        </div>
+                    </div>
+
+                    <div id = "optionsSec" class = "sec">
+                        <div class = "col1">
+                            <img class = "appImage" src="images/options.gif">
+                        </div>
+
+                        <div class = "col2">
+                            <h3>Options</h3>
+                            <p>The option panel appears through a tap on the items. Change the colour, edit the text, add some photos or delete your items.</p>
+                        </div>
+                    </div>
+
+                    <div id = "searchSec" class = "sec">
+                        <div class = "col1">
+                            <h3>Search</h3>
+                            <p>Use the search function to easily access and edit items.</p>
+                        </div>
+
+                        <div class = "col2">
+                            <img class = "appImage" src="images/search.png">
+                        </div>
+                    </div>
+
+                    <div id = "navigationSec" class = "sec">
+                        <div class = "col1">
+                            <img class = "appImage" src="images/navigation.gif">
+                        </div>
+
+                        <div class = "col2">
+                            <h3>Navigation</h3>
+                            <p>Navigate through your items. Tap on the button to the right of an item to enter a deeper hierarchy level. Swipe the Navigation Bar to the right to go back or tap the drop in the Navigation Bar to go directly to the root item.</p>
+                        </div>
+                    </div>
+
+                    <div id = "photosSec" class = "sec">
+                        <div class = "col1">
+                            <h3>Add Photos</h3>
+                            <p>Add existing photos from your photo library or take a new one. To view a photo in full size tap on it to open the photo browser. </p>
+                        </div>
+
+                        <div class = "col2">
+                            <img class = "appImage" src="images/photos.png">
+                        </div>
+                    </div>
+
+                    <div id = "reorderSec" class = "sec">
+                        <div class = "col1">
+                            <img class = "appImage" src="images/reorder.gif">
+                        </div>
+
+                        <div class = "col2">
+                            <h3>Reorder Items</h3>
+                            <p>Reorder an item by swiping it to the right, grab the reorder button and drag it to its new position.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--
+////////////////////////////////////////////////////////////////////////////
+                                    BUY                                
+////////////////////////////////////////////////////////////////////////////
+-->
+        <div id = "buy">
+            <div class = "out">
+                <div class = "in">
+                    <a id = "appStore2" href = "http://itunes.apple.com/app/id590257831" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+<!--
+////////////////////////////////////////////////////////////////////////////
+                                   FOOTER                                
+////////////////////////////////////////////////////////////////////////////
+-->
+        <div id = "footer">
+            <div class = "out">
+                <div class = "in">
+
+                    <ul>
+                        <li><a href="mailto:textAndColour+support@gmail.com">Support</a></li>
+                        <li><a href="https://twitter.com/TextAndColour">Twitter</a></li>
+                        <li><a href="mailto:textAndColour+contact@gmail.com">Email</a></li>
+                        <li><a href="PressKit.zip">PressKit</a></li>
+                        <!-- <li><a href="about.html">About</a></li>
+                        <li><a href="imprint.html">Imprint</a></li> -->
+                    </ul>
+
+                    <div id = "footerImages">
+                        <a href="index.html"><img id = "footerLogo" src="images/logo_gray.png"></a>
+                        <img id = "footerBerlin" src="images/berlin.png">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+<!--
+////////////////////////////////////////////////////////////////////////////
+-->
+    </body>
+</html>

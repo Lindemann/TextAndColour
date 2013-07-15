@@ -1,0 +1,69 @@
+
+/*////////////////////////////////////////////////////////////////////////////*/
+/*                              ACTIVITY SPINNER                              */
+/*////////////////////////////////////////////////////////////////////////////*/
+
+.theme-default .nivoSlider {
+	background:#fff url(spinner.gif) no-repeat 50% 50%;
+	background-size: 25px 25px;
+}
+
+/*////////////////////////////////////////////////////////////////////////////*/
+/*                              NAVIGATION DOTS                               */
+/*////////////////////////////////////////////////////////////////////////////*/
+
+.theme-default .nivo-controlNav {
+	position: relative;
+	top: 85px;
+}
+
+.theme-default .nivo-controlNav a {
+	display:inline-block;
+	text-indent:-9999px;
+
+	width:9px;
+	height:9px;
+
+	background:url(dot_dark.png) no-repeat;
+	background-size: 9px 9px;
+
+	margin: 0 4px;
+}
+
+.theme-default .nivo-controlNav a.active {
+	background:url(dot_light.png) no-repeat;
+	background-size: 9px 9px;
+}
+
+/*////////////////////////////////////////////////////////////////////////////*/
+/*                              DIRECTION BUTTONS                             */
+/*////////////////////////////////////////////////////////////////////////////*/
+
+.theme-default .nivo-directionNav a {
+	width:50px;
+	height:50px;
+
+	text-indent:-9999px;
+}
+
+.theme-default a.nivo-nextNav {
+	background:url(arrow_right_dark.png) no-repeat;
+	background-size: 50px 50px;
+}
+
+.theme-default a.nivo-prevNav {
+	background:url(arrow_left_dark.png) no-repeat;
+	background-size: 50px 50px;
+}
+
+.theme-default a.nivo-nextNav:hover {
+	background:url(arrow_right_light.png) no-repeat;
+	background-size: 50px 50px;
+}
+
+.theme-default a.nivo-prevNav:hover {
+	background:url(arrow_left_light.png) no-repeat;
+	background-size: 50px 50px;
+}
+
+/* More Settings are in nivo-slider.css*/

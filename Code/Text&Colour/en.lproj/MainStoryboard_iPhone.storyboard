@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="5zy-se-EOO">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--First Item Table View Controller-->
+        <scene sceneID="hsu-g8-0Sz">
+            <objects>
+                <tableViewController storyboardIdentifier="FirstItemTableViewController" id="JeW-GW-Gkw" customClass="FirstItemTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="dWu-F2-DRs">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="ldV-C6-Pis">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="JeW-GW-Gkw" id="1nE-Uv-J23"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AAA" id="7ha-Ku-9HJ" customClass="SwipeTableViewCell">
+                                <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="JeW-GW-Gkw" id="bbh-Ak-zHG"/>
+                            <outlet property="delegate" destination="JeW-GW-Gkw" id="Jbw-pz-lXa"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="5aY-7g-0x3"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="9KB-h1-MKf" id="O8d-vq-bKM"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yaT-Zk-ggQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="9KB-h1-MKf">
+                    <connections>
+                        <outlet property="delegate" destination="JeW-GW-Gkw" id="n8K-ef-PrF"/>
+                        <outlet property="searchBar" destination="ldV-C6-Pis" id="R4T-X7-b9o"/>
+                        <outlet property="searchContentsController" destination="JeW-GW-Gkw" id="Wsq-xo-CSx"/>
+                        <outlet property="searchResultsDataSource" destination="JeW-GW-Gkw" id="pji-bT-R3Z"/>
+                        <outlet property="searchResultsDelegate" destination="JeW-GW-Gkw" id="uc3-5g-TUl"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="699" y="29"/>
+        </scene>
+        <!--Settings Table View Controller - Settings-->
+        <scene sceneID="nI3-rX-rMa">
+            <objects>
+                <tableViewController id="AIp-8h-bbC" customClass="SettingsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="grouped" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="ddy-8S-HWm">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.94509803920000002" green="0.96470588239999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="separatorColor" red="0.78431372549019607" green="0.82745098039215681" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="pCM-NY-8Xf">
+                            <rect key="frame" x="0.0" y="320" width="320" height="130"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5mX-wU-0PB">
+                                    <rect key="frame" x="9" y="35" width="302" height="49"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <size key="titleShadowOffset" width="0.0" height="-1"/>
+                                    <state key="normal" title="Reset">
+                                        <color key="titleColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleShadowColor" red="0.47450980390000003" green="0.43921568630000002" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <state key="highlighted">
+                                        <color key="titleColor" red="0.69803921568627447" green="0.69803921568627447" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleShadowColor" red="0.21960784310000001" green="0.20000000000000001" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="resetButtonPressed" destination="AIp-8h-bbC" eventType="touchUpInside" id="h6T-Zp-VqE"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Reset to default Settings" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FOp-Vw-t9E">
+                                    <rect key="frame" x="20" y="6" width="224" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.56862745098039214" green="0.59607843137254901" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.94509803920000002" green="0.96470588239999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <sections>
+                            <tableViewSection headerTitle="Default Colour for new Items" id="2FI-h1-Qhz">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="140" id="smb-Ha-kIB">
+                                        <rect key="frame" x="0.0" y="46" width="320" height="141"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="139"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vGu-6u-QVp">
+                                                    <rect key="frame" x="129" y="9" width="40" height="56"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <state key="normal" image="dropButton_blue@2x.png">
+                                                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="highlighted" image="settingsDrop_blue@2x.png">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="blueButtonPressed" destination="AIp-8h-bbC" eventType="touchUpInside" id="qkm-hs-nxa"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7bN-P0-8N4">
+                                                    <rect key="frame" x="31" y="9" width="40" height="56"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <state key="normal" image="dropButton_gray@2x.png">
+                                                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="highlighted" image="settingsDrop_gray@2x.png">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="grayButtonPressed" destination="AIp-8h-bbC" eventType="touchUpInside" id="lTL-vL-lMW"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AmK-iO-0Ek">
+                                                    <rect key="frame" x="129" y="72" width="40" height="56"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <state key="normal" image="dropButton_coral@2x.png">
+                                                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="highlighted" image="settingsDrop_coral@2x.png">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="coralButtonPressed" destination="AIp-8h-bbC" eventType="touchUpInside" id="8Wn-y2-VLh"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Eos-X3-L3r">
+                                                    <rect key="frame" x="31" y="72" width="40" height="56"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <state key="normal" image="dropButton_rose@2x.png">
+                                                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="highlighted" image="settingsDrop_rose@2x.png">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="roseButtonPressed" destination="AIp-8h-bbC" eventType="touchUpInside" id="kR6-Bk-UMg"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="b4h-gm-QkR">
+                                                    <rect key="frame" x="225" y="72" width="40" height="56"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <state key="normal" image="dropButton_yellow@2x.png">
+                                                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="highlighted" image="settingsDrop_yellow@2x.png">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="yellowButtonPressed" destination="AIp-8h-bbC" eventType="touchUpInside" id="3WR-s6-Fvt"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zBp-uR-VG1">
+                                                    <rect key="frame" x="225" y="9" width="40" height="56"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <state key="normal" image="dropButton_turquoise@2x.png">
+                                                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="highlighted" image="settingsDrop_turquoise@2x.png">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="turquoiseButtonPressed" destination="AIp-8h-bbC" eventType="touchUpInside" id="krJ-oe-13x"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="7ZG-Qp-kul">
+                                <string key="headerTitle">Save new captured Photos in 
+Photo Library</string>
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="55" id="6eM-qQ-WQp">
+                                        <rect key="frame" x="0.0" y="254" width="320" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="54"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Save in Library" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="im8-2D-18J">
+                                                    <rect key="frame" x="13" y="16" width="114" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.56862745098039214" green="0.59607843137254901" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" id="fpT-qa-4cj">
+                                                    <rect key="frame" x="209" y="5" width="78" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="AIp-8h-bbC" id="FHp-2x-fDQ"/>
+                            <outlet property="delegate" destination="AIp-8h-bbC" id="E0L-8Y-8ZY"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Settings" id="BtI-MR-4rD"/>
+                    <connections>
+                        <outlet property="blueButton" destination="vGu-6u-QVp" id="UPQ-zR-DoY"/>
+                        <outlet property="coralButton" destination="AmK-iO-0Ek" id="jC7-ei-xmQ"/>
+                        <outlet property="grayButton" destination="7bN-P0-8N4" id="iWn-dR-LlD"/>
+                        <outlet property="resetButton" destination="5mX-wU-0PB" id="Qrf-cp-AbR"/>
+                        <outlet property="roseButton" destination="Eos-X3-L3r" id="Lll-DK-Krm"/>
+                        <outlet property="savePhotosSwitchView" destination="fpT-qa-4cj" id="dXJ-Sd-7uF"/>
+                        <outlet property="turquoiseButton" destination="zBp-uR-VG1" id="dMh-Le-Epm"/>
+                        <outlet property="yellowButton" destination="b4h-gm-QkR" id="ZQa-cF-WhZ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ii-Jj-Ogh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="699" y="636"/>
+        </scene>
+        <!--Other Item Table View Controller-->
+        <scene sceneID="RYD-iE-GX9">
+            <objects>
+                <tableViewController storyboardIdentifier="OtherItemTableViewController" id="EP8-ik-WUO" customClass="OtherItemTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="lnc-gF-XRD">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="Z1r-cT-b6X">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="EP8-ik-WUO" id="WKA-8n-cox"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AAA" id="08F-iI-ZBf" customClass="SwipeTableViewCell">
+                                <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="EP8-ik-WUO" id="H4y-YO-rFV"/>
+                            <outlet property="delegate" destination="EP8-ik-WUO" id="Itv-X2-9ar"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="b13-m6-Fqz"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="Clm-Na-N4X" id="eG4-Nk-gTU"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JSO-SQ-DyO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="Clm-Na-N4X">
+                    <connections>
+                        <outlet property="delegate" destination="EP8-ik-WUO" id="ojy-Uh-nz1"/>
+                        <outlet property="searchBar" destination="Z1r-cT-b6X" id="tOd-HP-OFQ"/>
+                        <outlet property="searchContentsController" destination="EP8-ik-WUO" id="GK6-Bh-WS4"/>
+                        <outlet property="searchResultsDataSource" destination="EP8-ik-WUO" id="jc4-ay-lBb"/>
+                        <outlet property="searchResultsDelegate" destination="EP8-ik-WUO" id="FMb-W7-4nQ"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="699" y="-571"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BHp-R6-PID">
+            <objects>
+                <navigationController id="5zy-se-EOO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="hXA-8U-Mi5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JeW-GW-Gkw" kind="relationship" relationship="rootViewController" id="VCU-0r-mt0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2SZ-gs-VOk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="241" y="29"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PEW-Fs-LIx">
+            <objects>
+                <navigationController storyboardIdentifier="SettingsNavigationController" id="9S3-JR-6gF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nmh-IN-Flv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="AIp-8h-bbC" kind="relationship" relationship="rootViewController" id="s8u-N1-65R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YOC-hr-8YY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="241" y="636"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dropButton_blue@2x.png" width="80" height="111"/>
+        <image name="dropButton_coral@2x.png" width="80" height="111"/>
+        <image name="dropButton_gray@2x.png" width="80" height="111"/>
+        <image name="dropButton_rose@2x.png" width="80" height="111"/>
+        <image name="dropButton_turquoise@2x.png" width="80" height="111"/>
+        <image name="dropButton_yellow@2x.png" width="80" height="111"/>
+        <image name="settingsDrop_blue@2x.png" width="77" height="105"/>
+        <image name="settingsDrop_coral@2x.png" width="77" height="105"/>
+        <image name="settingsDrop_gray@2x.png" width="77" height="105"/>
+        <image name="settingsDrop_rose@2x.png" width="77" height="105"/>
+        <image name="settingsDrop_turquoise@2x.png" width="77" height="105"/>
+        <image name="settingsDrop_yellow@2x.png" width="77" height="105"/>
+    </resources>
+    <classes>
+        <class className="FirstItemTableViewController" superclassName="SuperTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstItemTableViewController.h"/>
+        </class>
+        <class className="OtherItemTableViewController" superclassName="SuperTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/OtherItemTableViewController.h"/>
+        </class>
+        <class className="SettingsTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsTableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="blueButtonPressed"/>
+                <relationship kind="action" name="coralButtonPressed"/>
+                <relationship kind="action" name="grayButtonPressed"/>
+                <relationship kind="action" name="resetButtonPressed"/>
+                <relationship kind="action" name="roseButtonPressed"/>
+                <relationship kind="action" name="turquoiseButtonPressed"/>
+                <relationship kind="action" name="yellowButtonPressed"/>
+                <relationship kind="outlet" name="blueButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="coralButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="grayButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="resetButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="roseButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="savePhotosSwitchView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="turquoiseButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="yellowButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="SuperTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SuperTableViewController.h"/>
+        </class>
+        <class className="SwipeTableViewCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SwipeTableViewCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="imageBackgroundView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="label" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="reorderImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="reorderView" candidateClass="UIView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
