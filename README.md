@@ -3,4 +3,5 @@
 ### TextAndColour - Legacy iOS 6 App
 http://lindemann.github.io/TextAndColour
 
-![Screenshot](http://lindemann.github.io/TextAndColour/images/screenshot_01.png)
+<img src="http://lindemann.github.io/TextAndColour/images/screenshot_01.png" alt="icon" width="200">
+<img src="http://lindemann.github.io/TextAndColour/images/screenshot_02.png" alt="icon" width="200">
